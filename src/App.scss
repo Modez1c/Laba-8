@@ -1,0 +1,48 @@
+li {
+  list-style: none;
+}
+
+.main {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  &__create-task-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+
+    img {
+      user-select: none;
+      pointer-events: none;
+      -drag: none;
+      -moz-user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+    }
+  }
+
+  &__card {
+    border-radius: 10px;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    padding: 20px;
+    background-color: #fdf3b4;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  }
+}
